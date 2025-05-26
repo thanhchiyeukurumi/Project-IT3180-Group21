@@ -1,0 +1,237 @@
+[{
+  "_id": {
+    "$oid": "67618ada1a32b990837beff3"
+  },
+  "head": {
+    "$oid": "676189d61a32b990837befed"
+  },
+  "contact_phone": "0912345678",
+  "apartments": [
+    {
+      "$oid": "67618b341a32b990837beff6"
+    }
+  ],
+  "members": [
+    {
+      "member_id": "676189d61a32b990837befef",
+      "relation_to_head": "Cháu"
+    },
+    {
+      "member_id": "676189d61a32b990837beff0",
+      "relation_to_head": "Cháu"
+    }
+  ],
+  "motobikes": [
+    {
+      "vehicle_type": "Xe máy",
+      "plate": "29-B1-9867",
+      "_id": {
+        "$oid": "676356ed1ec69565a434f26c"
+      }
+    }
+  ],
+  "__v": 1,
+  "cars": []
+},
+{
+  "_id": {
+    "$oid": "676198171a32b990837bf000"
+  },
+  "head": {
+    "$oid": "676197641a32b990837beff9"
+  },
+  "contact_phone": "0912989678",
+  "apartments": [
+    {
+      "$oid": "676197a11a32b990837beffe"
+    }
+  ],
+  "members": [
+    {
+      "member_id": "676197641a32b990837beffa",
+      "relation_to_head": "Vợ chồng"
+    },
+    {
+      "member_id": "676197641a32b990837beffb",
+      "relation_to_head": "Anh em"
+    }
+  ],
+  "motobikes": []
+},
+{
+  "_id": {
+    "$oid": "67619a3b1a32b990837bf009"
+  },
+  "head": {
+    "$oid": "676199da1a32b990837bf003"
+  },
+  "contact_phone": "0917349678",
+  "apartments": [
+    {
+      "$oid": "6762dcd324ce493d7835476e"
+    }
+  ],
+  "members": [
+    {
+      "member_id": "676199da1a32b990837bf004",
+      "relation_to_head": "Vợ chồng"
+    },
+    {
+      "member_id": "676199da1a32b990837bf005",
+      "relation_to_head": "Con cái"
+    },
+    {
+      "member_id": {
+        "$oid": "6763856759e1cc38d777942b"
+      },
+      "relation_to_head": "Con cái",
+      "_id": {
+        "$oid": "676386d113c9be093c63488c"
+      }
+    }
+  ],
+  "__v": 2,
+  "motobikes": [],
+  "cars": []
+},
+{
+  "_id": {
+    "$oid": "6761a0551a32b990837bf010"
+  },
+  "head": {
+    "$oid": "6761a0031a32b990837bf00b"
+  },
+  "contact_phone": "0912229678",
+  "apartments": [
+    {
+      "$oid": "6761a0141a32b990837bf00e"
+    }
+  ],
+  "members": [
+    {
+      "member_id": "6761a0031a32b990837bf00c",
+      "relation_to_head": "Vợ chồng"
+    }
+  ],
+  "motobikes": [
+    {
+      "vehicle_type": "Xe máy",
+      "plate": "99-A1-2412",
+      "_id": {
+        "$oid": "67635460defbab809528233e"
+      }
+    }
+  ],
+  "__v": 1,
+  "cars": []
+},
+{
+  "_id": {
+    "$oid": "6761a1b71a32b990837bf017"
+  },
+  "head": {
+    "$oid": "6761a1421a32b990837bf012"
+  },
+  "contact_phone": "0932879678",
+  "apartments": [
+    {
+      "$oid": "6761a16e1a32b990837bf015"
+    }
+  ],
+  "members": [
+    {
+      "member_id": "6761a1421a32b990837bf013",
+      "relation_to_head": "Vợ chồng"
+    }
+  ],
+  "motobikes": [
+    {
+      "vehicle_type": "Xe máy",
+      "plate": "17-K1-2355",
+      "_id": {
+        "$oid": "676357b81ec69565a434f2dd"
+      }
+    },
+    {
+      "vehicle_type": "Xe máy",
+      "plate": "90-F1-12345",
+      "_id": {
+        "$oid": "6772f1af722c19f6eb6e3d30"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6761a3291a32b990837bf01e"
+  },
+  "head": {
+    "$oid": "6761a2e31a32b990837bf019"
+  },
+  "contact_phone": "0932879678",
+  "apartments": [
+    {
+      "$oid": "6761a2f51a32b990837bf01c"
+    }
+  ],
+  "members": [
+    {
+      "member_id": "6761a2e31a32b990837bf01a",
+      "relation_to_head": "Vợ chồng"
+    }
+  ],
+  "motobikes": [
+    {
+      "vehicle_type": "Xe máy",
+      "plate": "17-C1-8237",
+      "_id": {
+        "$oid": "67635495defbab80952823a4"
+      }
+    }
+  ],
+  "cars": [
+    {
+      "vehicle_type": "Ô tô",
+      "plate": "29A-0234",
+      "_id": {
+        "$oid": "676c6a876f7e779979b572fe"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6772e666e1359851fdf9a3b6"
+  },
+  "head": {
+    "$oid": "6772e666e1359851fdf9a3b3"
+  },
+  "contact_phone": "01234567891",
+  "apartments": [
+    {
+      "$oid": "67711b976ff2fe50623ccf3d"
+    }
+  ],
+  "members": [],
+  "motobikes": [],
+  "cars": [],
+  "__v": 5
+},
+{
+  "_id": {
+    "$oid": "6772f5fca855f5cfaa6b84dc"
+  },
+  "head": {
+    "$oid": "6772f5fca855f5cfaa6b84d9"
+  },
+  "contact_phone": "0898444333",
+  "apartments": [
+    {
+      "$oid": "67337e98e33e5402b19092e8"
+    }
+  ],
+  "members": [],
+  "motobikes": [],
+  "cars": [],
+  "__v": 6
+}]

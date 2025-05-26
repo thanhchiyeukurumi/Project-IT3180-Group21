@@ -1,0 +1,117 @@
+[{
+  "_id": {
+    "$oid": "67337e98e33e5402b19092e8"
+  },
+  "number": 101,
+  "type": "Căn hộ chung cư",
+  "household": {
+    "$oid": "6772f5fca855f5cfaa6b84dc"
+  },
+  "totalArea": 75
+},
+{
+  "_id": {
+    "$oid": "67337e98e33e5402b19092e9"
+  },
+  "number": 102,
+  "type": "Căn hộ chung cư",
+  "household": null,
+  "totalArea": 85
+},
+{
+  "_id": {
+    "$oid": "67618b341a32b990837beff6"
+  },
+  "household": {
+    "$oid": "67618ada1a32b990837beff3"
+  },
+  "number": 103,
+  "type": "Căn hộ chung cư",
+  "totalArea": 85
+},
+{
+  "_id": {
+    "$oid": "676197a11a32b990837beffe"
+  },
+  "household": {
+    "$oid": "676198171a32b990837bf000"
+  },
+  "number": 201,
+  "type": "Căn hộ chung cư",
+  "totalArea": 100
+},
+{
+  "_id": {
+    "$oid": "676199f41a32b990837bf007"
+  },
+  "household": null,
+  "number": 202,
+  "type": "Căn hộ chung cư",
+  "totalArea": 85
+},
+{
+  "_id": {
+    "$oid": "6761a0141a32b990837bf00e"
+  },
+  "household": {
+    "$oid": "6761a0551a32b990837bf010"
+  },
+  "number": 203,
+  "type": "Căn hộ chung cư",
+  "totalArea": 85
+},
+{
+  "_id": {
+    "$oid": "6761a16e1a32b990837bf015"
+  },
+  "household": {
+    "$oid": "6761a1b71a32b990837bf017"
+  },
+  "number": 301,
+  "type": "Căn hộ chung cư",
+  "totalArea": 85
+},
+{
+  "_id": {
+    "$oid": "6761a2f51a32b990837bf01c"
+  },
+  "household": {
+    "$oid": "6761a3291a32b990837bf01e"
+  },
+  "number": 401,
+  "type": "Căn hộ chung cư",
+  "totalArea": 85
+},
+{
+  "_id": {
+    "$oid": "6762dcd324ce493d7835476e"
+  },
+  "household": {
+    "$oid": "67619a3b1a32b990837bf009"
+  },
+  "number": 302,
+  "type": "Căn hộ chung cư",
+  "totalArea": 85,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67698a95c4872e9dc6a825a7"
+  },
+  "household": null,
+  "number": 198,
+  "type": "Căn hộ chung cư",
+  "totalArea": 85,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67711b976ff2fe50623ccf3d"
+  },
+  "number": 105,
+  "type": "Căn hộ chung cư",
+  "totalArea": 85,
+  "household": {
+    "$oid": "6772e666e1359851fdf9a3b6"
+  }
+}]

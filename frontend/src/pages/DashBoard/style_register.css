@@ -1,0 +1,82 @@
+/* Register Part */
+.details .recentCt.page2 {
+  width: 80%;
+  margin-left: 10%;   
+  display: inline;
+  padding-left:30px;
+  padding-right:30px;
+}
+form {
+  position: relative;
+  margin-top: 16px;
+  min-height: 200px;
+  margin-bottom: 10px;
+}
+form .fields{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3,1fr);
+  column-gap: 15px;
+  row-gap: 10px;
+  margin-bottom: 10px;
+}
+.second .fields{
+  grid-template-rows: 1fr;
+}
+form .fields .input-fields{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-fields label{
+  position: relative;
+  top: 20%;
+  font-size: 12px;
+  font-weight: 500px;
+  color: #2e2e2e;
+}
+.input-fields input,select{
+  height: 42px;
+  margin: 8px 0;
+  padding: 0 15px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400px;
+  color: #333;
+}
+.input-fields input:is(:focus,:valid)
+{
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+select:is(:focus,:valid)
+{
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+select{
+  padding: 0 15px;
+}
+.input-fields input[type="date"]{
+  color: #707070;
+}
+.input-fields input[type="date"]:valid{
+  color: #333;
+}
+#title{
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500px;
+  color: #333;
+  padding: 0%;
+}
+form .second{
+  margin-top: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 0.25px solid #000; /* Đặt màu đen và độ dày 3px */
+  margin: 20px 0; /* Khoảng cách trên và dưới */
+}

@@ -19,7 +19,7 @@ function Page1(){
 
     const [households, setHouseholds] = useState([]);
     const [totalItems, setTotalItems] = useState(0);
-    const [limitItem, setLimitItems] = useState(8);
+    const limitItem = 8;
 
     useEffect(() => {
         dispatch(fetchDashboardData());
@@ -234,14 +234,27 @@ function Page1(){
 
                   <tbody>
                       {filteredHousehold?.map(household =>
-                         <tr>
+                         <tr key={household.id}>
                             <td> { household.head } </td>
                             <td> { household.contact } </td>
                             <td> { household.floors } </td>
                             <td> { household.numbers } </td>
                             <td>
                                 {(() => {
-                                    const color = household.status === "Thường trú" ? "green" : household.status === "Tạm trú" ? "yellow" : "red";
+                                    let color = 'default';
+                                    switch(household.status) {
+                                        case 'Thường trú':
+                                            color = 'green';
+                                            break;
+                                        case 'Tạm trú':
+                                            color = 'blue';
+                                            break;
+                                        case 'Tạm vắng':
+                                            color = 'orange';
+                                            break;
+                                        default:
+                                            color = 'default';
+                                    }
                                     return <Tag color={color}>{household.status}</Tag>;
                                 })()}
                             </td>

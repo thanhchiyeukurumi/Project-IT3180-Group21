@@ -144,7 +144,7 @@ function ResidentList(){
 
                     <tbody>
                         { filteredPeople.map(resident => 
-                            <tr key={resident._id}>
+                            <tr key={resident._id || resident.cic}>
                                 <td>{resident.cic}</td>
                                 <td> { resident.name } </td>
                                 <td> { resident.contact_phone } </td>

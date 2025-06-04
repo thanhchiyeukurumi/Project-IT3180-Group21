@@ -31,7 +31,7 @@ function Table(){
                     <tbody>
                       {
                         visibleData.map((item, index) => (
-                          <tr key={index}>
+                          <tr key={item.household_id || index}>
                             <td>{item.headName}</td>
                             <td>{item.totalAmount.toLocaleString("vi-VN")} VNĐ</td>
                             <td>{(item.totalAmount-item.payed).toLocaleString("vi-VN")} VNĐ</td>
@@ -44,7 +44,7 @@ function Table(){
                       }
                     </tbody>
               </table>
-              <a href="#" onClick={() => setShowAll(!showAll)}>Xem tất cả</a>
+              <button onClick={() => setShowAll(!showAll)} className="view-all-btn">Xem tất cả</button>
             </div>
         </main>
         </div>

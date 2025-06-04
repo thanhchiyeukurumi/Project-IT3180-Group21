@@ -39,7 +39,7 @@ function Register(){
         .then(data => {
             setRemains(data);
         });
-    }, [])
+    }, [remains])
     
     const handlePersonalChange = (e) => {
         e.preventDefault();

@@ -153,7 +153,7 @@ function VehicleMange(){
             <tbody>
               {filteredData.map((owner, ownerIndex) => (
                 owner.vehicle.map((vehicle, vehicleIndex) => (
-                  <tr key={`${ownerIndex}-${vehicleIndex}`}>
+                  <tr key={vehicle._id || vehicle.plate || `${ownerIndex}-${vehicleIndex}`}>
                     <td>{vehicleIndex === 0 ? owner.ownName : ""}</td>
                     <td>{vehicleIndex === 0 ? owner.vehicle.length : ""}</td>
                     <td>{vehicle.vehicle_type}</td>

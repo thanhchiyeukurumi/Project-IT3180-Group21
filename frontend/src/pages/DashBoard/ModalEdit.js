@@ -17,7 +17,7 @@ function ModalEdit (props) {
           endTemporary: isMovingOut ? moment((new Date(personInfo?.endTemporary)).toLocaleDateString('vi-VN'), "DD-MM-YYYY") : null,
         });
       }
-    }, [personInfo, form]);
+    }, [personInfo, form, isMovingOut]);
 
     const handleOk = async (e) => {
       const values = await form.validateFields();

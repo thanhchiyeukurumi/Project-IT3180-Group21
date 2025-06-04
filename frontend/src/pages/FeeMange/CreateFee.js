@@ -138,7 +138,7 @@ function CreateFee(props) {
             <InputNumber 
               formatter={(value) => `${Number(value).toLocaleString("vi-VN")}`} 
               parser={(value) => value.replace(/\D/g, '')}
-              style={{ width: "auto", maxWidth: '100%', width: '150%' }}
+              style={{ maxWidth: '100%', width: '150%' }}
             />
           </Form.Item>
 

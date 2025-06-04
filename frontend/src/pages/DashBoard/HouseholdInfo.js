@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';  
-import { Card, Descriptions, Table ,Button, Modal, message} from "antd";
+import { Card, Descriptions, Table ,Button, Modal} from "antd";
 import { EditOutlined , ExclamationCircleOutlined } from '@ant-design/icons';
 import { Space , Tag} from 'antd';
 import DescriptionPerson from './DescriptionPerson';

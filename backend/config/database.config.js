@@ -5,6 +5,6 @@ module.exports.connect = async () => {
         await mongoose.connect(process.env.MONGODB_URL, {dbName: "it3180"});
         console.log("Connect Database: Success!");
     } catch (error){
-        console.log("Connect Database: Error!");
+        console.log("Connect Database: Error!", error);
     }
 }

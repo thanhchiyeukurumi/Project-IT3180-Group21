@@ -19,7 +19,7 @@ function FeeMange(){
 
   useEffect(() => {
     dispatch(fetchAllPayments())
-  },[])
+  },[dispatch])
 
   //Dữ liệu để lọc
   const householdName = [
@@ -50,7 +50,6 @@ function FeeMange(){
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [checkedPayments, setCheckedPayments] = useState([]);
   const [transactionID, setTransactionID] = useState("");
-  const [transactionTime, setTransactionTime] = useState(dayjs());
   const [filters, setFilters] = useState({
     paymentName: null, 
     householdName: null, 
@@ -92,10 +91,8 @@ function FeeMange(){
       const hash = now.toString(36);
       return hash.slice(-8); // Lấy 8 ký tự cuối
     };
-    const transactionTime = dayjs().format('DD/MM/YYYY HH:mm:ss');
     const transactionID = generateTransactionID();
     setTransactionID(transactionID);
-    setTransactionTime(transactionTime);
   };
 
   // Hàm đóng Modal

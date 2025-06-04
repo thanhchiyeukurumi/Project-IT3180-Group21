@@ -1,5 +1,5 @@
 import "./style.css";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { CloseOutlined } from "@ant-design/icons";
 import { useState, useEffect } from "react";
 import axios from "axios";

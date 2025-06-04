@@ -121,11 +121,11 @@ function Chart() {
           <div className="recent_updates" ref={recentUpdatesRef}>
             <div className="updates">
               {payments.array?.map((payment, index) => (
-                <div className="update" key={index}>
+                <div className="update" key={payment._id || index}>
                   <img src={profile} alt="" />
                   <div className="message">
                     <p>
-                      <b>{payment.householdHead}</b> Đã đóng {(payment.amount*payment.count).toLocaleString("vi-VN")}{" "}
+                      <b>{payment.householdHead}</b> Đã đóng {(payment.amount*payment.count).toLocaleString("vi-VN")} {" "}
                       VNĐ {payment.payment_name} 
                     </p>
                   </div>

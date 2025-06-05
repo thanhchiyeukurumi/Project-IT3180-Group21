@@ -69,9 +69,9 @@ const HouseholdInfo = () => {
       dataIndex: "dob",
     },
     {
-      title: "Quan hệ",
+      title: "Quan hệ với chủ hộ",
       dataIndex: "relation_to_head",
-      filters: [],
+      // filters: [],
     },
     {
       title: "Số điện thoại",
@@ -227,7 +227,7 @@ const HouseholdInfo = () => {
       {data.map((item) => (<ModalEdit householdId={householdId} isModalEdit={selectedPerson === item.key} personInfo={item.description} updateInfor={updateResidentInfo} onCancel={handleCancelModal2}/>))}
 
       {/* Danh sách người ở trong căn hộ */}
-      <Card title="Danh sách người ở trong căn hộ" bordered={false} extra= {appearDelete? <Button onClick={handleConfirm} color="danger" variant="filled">Xóa</Button> : null}>
+      <Card title="Danh sách những người khác ở trong căn hộ" bordered={false} extra= {appearDelete? <Button onClick={handleConfirm} color="danger" variant="filled">Xóa</Button> : null}>
       <Table
         {...tableProps}
         pagination={{

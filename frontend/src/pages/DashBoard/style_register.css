@@ -80,3 +80,16 @@ hr {
   border-top: 0.25px solid #000; /* Đặt màu đen và độ dày 3px */
   margin: 20px 0; /* Khoảng cách trên và dưới */
 }
+
+/* Trong file style_register.css */
+.input-fields .error-text {
+  color: #d93025; /* Màu đỏ của Google */
+  font-size: 12px;
+  margin-top: 4px;
+  display: block; /* Để nó xuống dòng */
+}
+
+.input-fields input:invalid {
+  /* Có thể thêm style cho input không hợp lệ, ví dụ viền đỏ */
+  /* border-color: #d93025; */
+}

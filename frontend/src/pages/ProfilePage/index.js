@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Form, Input, message, DatePicker } from 'antd'
+import customer01 from '../Layout/assets/imgs/customer01.jpg'
 import { Link } from 'react-router-dom';
 import dayjs from 'dayjs';
 import './style.css'
@@ -63,7 +64,7 @@ export default function PersonalProfile() {
             <div className="card-profile">
               <div className="card-body">
                 <div className="d-flex flex-column align-items-center text-center">
-                  <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" className="rounded-circle" width="150"/>
+                  <img src={customer01} alt="Admin" className="rounded-circle" width="350"/>
                   <div className="mt-3">
                     <h4>Admin</h4>
                     <p>{data.fullname}</p>

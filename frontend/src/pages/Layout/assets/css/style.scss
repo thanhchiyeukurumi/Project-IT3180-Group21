@@ -20,6 +20,10 @@
 .layout-default__sidebar {
   min-height: 100vh;
   overflow-x: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
 
   &--container{
     position: relative;
@@ -55,7 +59,8 @@
   }
 
   &--navigation ul li:hover,
-  &--navigation ul li.hovered {
+  &--navigation ul li.hovered,
+  &--navigation ul li.active {
     background-color: var(--white);
   }
 
@@ -73,7 +78,8 @@
     color: var(--white);
   }
   &--navigation ul li:hover a,
-  &--navigation ul li.hovered a {
+  &--navigation ul li.hovered a,
+  &--navigation ul li.active a {
     color: var(--blue);
   }
   
@@ -137,6 +143,7 @@
   min-height: 100vh;
   background: var(--white);
   transition: 0.5s;
+  z-index: 1;
 
   &.active{
     width: calc(100% - 80px);
@@ -144,12 +151,18 @@
   }
 
   &--topbar{
-    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: inherit;
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
+    background: var(--white);
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
   &--toggle {
@@ -192,6 +205,10 @@
     font-size: 1.2rem;
   }
 
+  &--user-container {
+    position: relative;
+  }
+
   &--user {
     position: relative;
     width: 40px;
@@ -199,14 +216,62 @@
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
   
   &--user img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
     object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &--user .user-name {
+    font-size: 14px;
+    color: var(--black1);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  > *:not(.layout-default__main--topbar) {
+    padding: 80px 20px 20px 20px;
+  }
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  z-index: 1000;
+  margin-top: 10px;
+
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f5f5f5;
+    }
+
+    ion-icon {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+
+    span {
+      font-size: 14px;
+    }
   }
 }

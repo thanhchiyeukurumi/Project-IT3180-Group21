@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { useEffect, useMemo, useState } from "react"
-import { Form, Select, Row, Col, Pagination, Tag} from "antd";
-import {ExportOutlined } from '@ant-design/icons';
+import { Form, Select, Row, Col, Pagination, Tag, Modal, Button, message} from "antd";
+import {ExportOutlined, ExclamationCircleOutlined} from '@ant-design/icons';
 import "./style.css";
 import axios from "axios";
 function ResidentList(){
@@ -74,6 +74,31 @@ function ResidentList(){
         });
     },[residents,filters]);
 
+    const handleDelete = async (personId) => {
+        try {
+            const response = await axios.post(`http://localhost:8386/person/api/v1/delete?id=${personId}`);
+            if(response.data.message === "Delete complete") {
+                message.success({ content: 'Xóa thành công!', key: 'delete' });
+                fetchData(currentPage); // Refresh data after delete
+            }
+        } catch (error) {
+            message.error({ content: 'Xóa thất bại!', key: 'delete' });
+            console.error("Error deleting:", error);
+        }
+    }
+
+    const handleConfirm = (id) => {
+        Modal.confirm({
+            title: "Xác nhận",
+            icon: <ExclamationCircleOutlined />,
+            content: "Bạn có chắc chắn muốn xóa?",
+            okText: "Xác nhận",
+            cancelText: "Hủy",
+            centered: true,
+            onOk: () => {handleDelete(id)},
+        });
+    };
+
     return (
     <>
         <div  className="details page2">
@@ -139,6 +164,7 @@ function ResidentList(){
                             <td>Số căn hộ</td>
                             <td>Trạng thái</td>
                             <td>Chi tiết</td>
+                            <td></td>
                         </tr>
                     </thead>
 
@@ -157,6 +183,7 @@ function ResidentList(){
                                     })()}
                                 </td>
                                 <td><span className="status"><Link to={`/household_infor?household_id=${resident.householdId}`}><ExportOutlined /></Link></span></td>
+                                <td><Button danger onClick={() => handleConfirm(resident._id)}>Xóa</Button></td>
                             </tr>
                         )}
                     </tbody>

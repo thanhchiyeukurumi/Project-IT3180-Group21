@@ -227,13 +227,13 @@ span{
   color: #fff;
   border-radius: 5px;
   margin: 25px 0;
-  background-color: #2a2185;
+  background-color: #3881A2;
   transition: all 0.3s linear;
   cursor: pointer;
  }
 
  button.submitBtn:hover{
-  background-color: #2a21c1;
+  background-color: #3881A2;
  }
 
  .components-table-demo-control-bar .ant-form-item {
@@ -313,4 +313,59 @@ label{
 }
 :where(.css-dev-only-do-not-override-1x0dypw).ant-table-wrapper table tr th.ant-table-selection-column, :where(.css-dev-only-do-not-override-1x0dypw).ant-table-wrapper table tr td.ant-table-selection-column, :where(.css-dev-only-do-not-override-1x0dypw).ant-table-wrapper .ant-table-selection-column {
   padding-top: 40px;
+}
+
+/* Modal styles */
+.ant-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-modal-content {
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.ant-modal-header {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.ant-modal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--blue);
+  text-align: center;
+}
+
+.ant-table {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ant-table-thead > tr > th {
+  background: var(--blue);
+  color: black !important;
+  font-weight: 600;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #e6f7ff !important;
+}
+
+.ant-table-pagination {
+  margin: 16px 0;
+  text-align: center;
+}
+
+.ant-pagination-item-active {
+  background: var(--blue) !important;
+  border-color: var(--blue) !important;
+}
+
+.ant-pagination-item-active a {
+  color: white !important;
 }

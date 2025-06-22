@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import  React,{ useEffect,useMemo, useState,} from "react"
 import { useSelector, useDispatch } from "react-redux";
 import { fetchDashboardData } from "../../actions";
-import { Form,Row,Col,Select ,Button,Modal,message,Pagination,Tag} from "antd";
+import { Form,Row,Col,Select ,Button,Modal,message,Pagination,Tag, Table} from "antd";
 import {ExclamationCircleOutlined,ExportOutlined} from '@ant-design/icons';
 function Page1(){
     const [currentPage, setCurrentPage] = useState(1);
@@ -20,6 +20,9 @@ function Page1(){
     const [households, setHouseholds] = useState([]);
     const [totalItems, setTotalItems] = useState(0);
     const limitItem = 8;
+    const [isModalVisible, setIsModalVisible] = useState(false);
+    const [modalType, setModalType] = useState('');
+    const [modalData, setModalData] = useState([]);
 
     useEffect(() => {
         dispatch(fetchDashboardData());
@@ -109,11 +112,124 @@ function Page1(){
       });
   };
 
+    const fetchAllData = async (endpoint) => {
+        let allData = [];
+        let page = 1;
+        let hasMore = true;
+        
+        while (hasMore) {
+            const response = await fetch(`${endpoint}?page=${page}`, {
+                method: "GET",
+                headers: {"Content-Type": "application/json"},
+            });
+            const data = await response.json();
+            
+            allData = [...allData, ...data.array];
+            hasMore = data.array.length > 0 && allData.length < data.totalItems;
+            page++;
+        }
+        
+        return allData;
+    };
+
+    const handleCardClick = async (type) => {
+        setModalType(type);
+        let data = [];
+        
+        switch(type) {
+            case 'apartment':
+                const apartmentData = await fetchAllData('http://localhost:8386/household/api/v1/all');
+                data = apartmentData.map(h => ({
+                    key: h._id,
+                    name: h.head,
+                    contact: h.contact_phone,
+                    floor: h.floors.join(', '),
+                    number: h.numbers.join(', '),
+                    status: h.status
+                }));
+                break;
+            case 'resident':
+                const residentData = await fetchAllData('http://localhost:8386/person/api/v1/all');
+                data = residentData.map(r => ({
+                    key: r._id,
+                    name: r.name,
+                    contact: r.contact_phone,
+                    floor: r.floors.join(', '),
+                    number: r.numbers.join(', '),
+                    status: r.status
+                }));
+                break;
+            case 'temporary':
+                const tempData = await fetchAllData('http://localhost:8386/person/api/v1/all');
+                data = tempData
+                    .filter(r => r.status === 'Tạm trú')
+                    .map(r => ({
+                        key: r._id,
+                        name: r.name,
+                        contact: r.contact_phone,
+                        floor: r.floors.join(', '),
+                        number: r.numbers.join(', '),
+                        status: r.status
+                    }));
+                break;
+            case 'absence':
+                const absData = await fetchAllData('http://localhost:8386/person/api/v1/all');
+                data = absData
+                    .filter(r => r.status === 'Tạm vắng')
+                    .map(r => ({
+                        key: r._id,
+                        name: r.name,
+                        contact: r.contact_phone,
+                        floor: r.floors.join(', '),
+                        number: r.numbers.join(', '),
+                        status: r.status
+                    }));
+                break;
+        }
+        
+        setModalData(data);
+        setIsModalVisible(true);
+    };
+
+    const columns = [
+        {
+            title: 'Họ tên',
+            dataIndex: 'name',
+            key: 'name',
+        },
+        {
+            title: 'Liên hệ',
+            dataIndex: 'contact',
+            key: 'contact',
+        },
+        {
+            title: 'Tầng',
+            dataIndex: 'floor',
+            key: 'floor',
+        },
+        {
+            title: 'Số căn hộ',
+            dataIndex: 'number',
+            key: 'number',
+        },
+        {
+            title: 'Trạng thái',
+            dataIndex: 'status',
+            key: 'status',
+            render: (status) => {
+                let color = 'green';
+                if (status === 'Tạm trú') color = 'yellow';
+                if (status === 'Tạm vắng') color = 'red';
+                return <Tag color={color}>{status}</Tag>;
+            }
+        }
+    ];
+
     return (
     <>
     {/* Card box */}
     <div className="cardBox">
-        <div className="card">
+        <div className="card" onClick={() => handleCardClick('apartment')}>
             <div>
                 <div className="numbers"> { numApartment } </div>
                 <div className="cardName">Căn hộ</div>
@@ -124,7 +240,7 @@ function Page1(){
             </div>
         </div>
 
-        <div className="card">
+        <div className="card" onClick={() => handleCardClick('resident')}>
             <div>
                 <div className="numbers"> { numPerson } </div>
                 <div className="cardName">Dân cư</div>
@@ -135,7 +251,7 @@ function Page1(){
             </div>
         </div>
 
-        <div className="card">
+        <div className="card" onClick={() => handleCardClick('temporary')}>
             <div>
                 <div className="numbers"> { numTemporary } </div>
                 <div className="cardName">Tạm trú</div>
@@ -146,7 +262,7 @@ function Page1(){
             </div>
         </div>
 
-        <div className="card">
+        <div className="card" onClick={() => handleCardClick('absence')}>
             <div>
                 <div className="numbers"> { numAbsence } </div>
                 <div className="cardName">Tạm vắng</div>
@@ -157,6 +273,25 @@ function Page1(){
             </div>
         </div>
     </div>
+
+    <Modal
+        title={
+            modalType === 'apartment' ? 'Chi tiết căn hộ' :
+            modalType === 'resident' ? 'Chi tiết dân cư' :
+            modalType === 'temporary' ? 'Chi tiết tạm trú' :
+            'Chi tiết tạm vắng'
+        }
+        open={isModalVisible}
+        onCancel={() => setIsModalVisible(false)}
+        width={1000}
+        footer={null}
+    >
+        <Table 
+            columns={columns}
+            dataSource={modalData}
+            pagination={{ pageSize: 5 }}
+        />
+    </Modal>
 
     {/*  */}
 
@@ -234,25 +369,25 @@ function Page1(){
                             <td> { household.numbers } </td>
                             <td>
                                 {(() => {
-                                    let color = 'default';
-                                    switch(household.status) {
-                                        case 'Thường trú':
-                                            color = 'green';
-                                            break;
-                                        case 'Tạm trú':
-                                            color = 'blue';
-                                            break;
-                                        case 'Tạm vắng':
-                                            color = 'orange';
-                                            break;
-                                        default:
-                                            color = 'default';
-                                    }
+                                    let color = 'green';
+                                    if (household.status === 'Tạm trú') color = 'yellow';
+                                    if (household.status === 'Tạm vắng') color = 'red';
                                     return <Tag color={color}>{household.status}</Tag>;
                                 })()}
                             </td>
                             <td><span>
-                                <Link to={`/household_infor?household_id=${household.id}`}>
+                                <Link 
+                                    to={`/household_infor?household_id=${household.id}`}
+                                    state={{ 
+                                        householdData: {
+                                            id: household.id,
+                                            head: household.head,
+                                            floors: household.floors,
+                                            numbers: household.numbers,
+                                            contact: household.contact
+                                        }
+                                    }}
+                                >
                                     <ExportOutlined className="status"/>
                                 </Link>
                             </span></td>

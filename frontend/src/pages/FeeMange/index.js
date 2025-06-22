@@ -18,8 +18,16 @@ function FeeMange(){
   const [reload, setReload] = useState(false);
 
   useEffect(() => {
-    dispatch(fetchAllPayments())
-  },[dispatch])
+    dispatch(fetchAllPayments());
+    
+    // Khi lần đầu vào trang, tự động lọc theo trạng thái "Chưa thanh toán"
+    const initialParams = {
+      page: 1,
+      limit: limitItem,
+      status: "undone" // Mặc định lọc "Chưa thanh toán"
+    };
+    dispatch(fetchTotalPayments(initialParams));
+  },[dispatch, limitItem])
 
   //Dữ liệu để lọc
   const householdName = [
@@ -55,7 +63,7 @@ function FeeMange(){
     householdName: null, 
     fromDate: null,      
     toDate: null,
-    paymentStatus: null      
+    paymentStatus: "Chưa thanh toán"      
   });
 
   useEffect(() => {
@@ -202,6 +210,8 @@ function FeeMange(){
                         (option.label).includes(input)
                       }
                       options={paymentStatus}
+                      defaultValue="Chưa thanh toán"
+                      value={filters.paymentStatus}
                       onChange={(value) => setFilters((prev) => ({ ...prev, paymentStatus: value }))}
                     ></Select>
                   </Form.Item>
@@ -242,7 +252,14 @@ function FeeMange(){
               </tr>
             </thead>
             <tbody>
-              {totalPayment?.map((Tpayment, index) => (
+              {[...(totalPayment || [])].sort((a, b) => {
+                // Ưu tiên trạng thái "Chưa thanh toán" lên đầu
+                if (a.status === "Chưa thanh toán" && b.status !== "Chưa thanh toán") return -1;
+                if (a.status !== "Chưa thanh toán" && b.status === "Chưa thanh toán") return 1;
+                
+                // Nếu cùng trạng thái, sắp xếp theo hạn nộp từ mới nhất
+                return new Date(b.payment_date) - new Date(a.payment_date);
+              }).map((Tpayment, index) => (
                 <tr key={index}>
                   <td>{Tpayment.payment_id}</td> {/* Hiển thị payment_id */}
                   <td>{dayjs(Tpayment.payment_date).format('DD/MM/YYYY')}</td> {/* Định dạng ngày nộp */}

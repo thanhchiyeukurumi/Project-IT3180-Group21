@@ -3,28 +3,46 @@ import "./style.css"
 import { Form, Select, Col, Row, Modal, Input,notification } from 'antd';
 import { CloseOutlined } from "@ant-design/icons";
 import AddVehicle from "./AddVehicle"
+import EditVehicle from "./EditVehicle"
 import axios from "axios";
 
 function VehicleMange(){
   const [dataList, setVehicles] = useState([]);
+  const [households, setHouseholds] = useState([]);
+  const [reload, setReload] = useState(false);
+
+  const handleReload = () => {
+    setReload(!reload);
+  }
+
   const fetchVehicles = async () => {
     try {
         const response = await axios.get("http://localhost:8386/vehicles/api/v2/vehicles");
         setVehicles(response.data);
     } catch (error) {
-        console.error("Error fetching residents data:", error);
+        console.error("Error fetching vehicles data:", error);
+    }
+  };
+
+  const fetchHouseholds = async () => {
+    try {
+        const response = await axios.get("http://localhost:8386/household/api/v1/all");
+        setHouseholds(response.data.array);
+    } catch (error) {
+        console.error("Error fetching households data:", error);
     }
   };
 
   useEffect(() => {
     fetchVehicles();
-  }, []);
+    fetchHouseholds();
+  }, [reload]);
 
   const householdName = [
     { value: "", label: "Tất cả" },
-      ...dataList.map(item => ({
-      value: item.ownName,
-      label: item.ownName,
+    ...households.map(item => ({
+      value: item.head,
+      label: item.head,
     })),
   ];
 
@@ -63,20 +81,20 @@ function VehicleMange(){
     });
   };
 
-  const handleDelete = async (vehicle,owner) => {
+  const handleDelete = async (vehicle, owner) => {
     Modal.confirm({
       title: "Xác nhận xóa",
-      content: "Bạn có chắc chắn muốn xóa loại phí này không?",
+      content: "Bạn có chắc chắn muốn xóa phương tiện này không?",
       okText: "Xóa",
       okType: "danger",
       cancelText: "Hủy",
       onOk: async () => {
         try {
           const response = await axios.post("http://localhost:8386/vehicles/api/v2/delete", {
-            "household_id":owner.household_id,
-            "ownName":owner.ownName,
-            "vehicle_type":vehicle.vehicle_type,
-            "plate":vehicle.plate
+            "household_id": owner.household_id,
+            "ownName": owner.ownName,
+            "vehicle_type": vehicle.vehicle_type,
+            "plate": vehicle.plate
           }, {
             headers: {
               "Content-Type": "application/json",
@@ -91,7 +109,8 @@ function VehicleMange(){
             openNotification("error", "Lỗi", "Có lỗi xảy ra khi gửi yêu cầu !!!");
         }
       }
-  })};
+    });
+  };
   
   return(
     <>
@@ -100,7 +119,7 @@ function VehicleMange(){
           <div className="cardHeader">
               <h2>Quản lý phương tiện</h2>
               <div className="all-button">
-                <AddVehicle owners={dataList?.map(data => data?.ownName)} />
+                <AddVehicle owners={households?.map(data => data?.head)} onReload={handleReload} />
               </div>
           </div>
           <div className="filter_options">
@@ -159,7 +178,8 @@ function VehicleMange(){
                     <td>{vehicle.vehicle_type}</td>
                     <td>{vehicle.plate}</td>
                     <td>
-                      <button className="btn-details delete-icon" onClick={() => handleDelete(vehicle,owner)}><CloseOutlined /></button>
+                      <EditVehicle item={{...vehicle, household_id: owner.household_id, ownName: owner.ownName}} onReload={handleReload} />
+                      <button className="btn-details delete-icon" onClick={() => handleDelete(vehicle, owner)}><CloseOutlined /></button>
                     </td>
                   </tr>
                 ))

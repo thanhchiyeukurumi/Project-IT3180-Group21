@@ -1,7 +1,7 @@
-import { Input, Form, Button, Radio, Modal, message, Select,notification } from "antd";
+import { Input, Form, Button, Radio, Modal, message, Select, notification } from "antd";
 import { useState } from "react";
 
-function AddVehicle({ owners }) {
+function AddVehicle({ owners, onReload }) {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const openNotification = (type, message, description) => {
     notification[type]({
@@ -26,7 +26,7 @@ function AddVehicle({ owners }) {
         if(data.message === "Success") {
           openNotification("success", "Thành công", "Thêm phương tiện thành công!");
           setIsModalVisible(false);
-          window.location.reload();
+          onReload();
         }
         else {
           console.log(message);
@@ -34,7 +34,6 @@ function AddVehicle({ owners }) {
         }
       }
     })
-  
   }
   return(
     <>

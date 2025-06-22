@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 font-ubuntu antialiased;
+  }
+}
+
+@layer components {
+  .text-decoration-none {
+    text-decoration: none;
+  }
+}

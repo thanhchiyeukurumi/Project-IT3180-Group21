@@ -1,0 +1,77 @@
+[{
+  "_id": {
+    "$oid": "6762cc41e0f210e6dee49f5e"
+  },
+  "name": "Phí vệ sinh",
+  "amount": 5000,
+  "due": 1,
+  "status": "Bắt buộc",
+  "household": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6762cc5ee0f210e6dee49f90"
+  },
+  "name": "Phí bảo trì",
+  "amount": 4000,
+  "due": 1,
+  "status": "Bắt buộc",
+  "household": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "676319f86b5b0ed3485eadb7"
+  },
+  "name": "Phí bảo vệ",
+  "amount": 5000,
+  "due": 1,
+  "status": "Bắt buộc",
+  "household": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677141bdc174c3ac2fbd1dc6"
+  },
+  "name": "Phí gửi ô tô",
+  "amount": 1200000,
+  "due": 1,
+  "status": "Bắt buộc",
+  "household": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6771a5c5bd5e8085394062fc"
+  },
+  "name": "Phí gửi xe máy",
+  "amount": 70000,
+  "due": 1,
+  "status": "Bắt buộc",
+  "household": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6771a656bd5e808539406744"
+  },
+  "name": "Phí từ thiện",
+  "amount": 50000,
+  "due": 1,
+  "status": "Không bắt buộc",
+  "household": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677276fc2e8e2cb7ebce420a"
+  },
+  "name": "Phí quản lý chung cư",
+  "amount": 14000,
+  "due": 1,
+  "status": "Bắt buộc",
+  "household": [],
+  "__v": 0
+}]

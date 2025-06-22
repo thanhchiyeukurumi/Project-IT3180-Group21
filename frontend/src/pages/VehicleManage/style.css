@@ -1,0 +1,181 @@
+.details__vehicle{
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-gap: 30px;
+}
+
+.details__vehicle .recentCt {
+  position: relative;
+  display: grid;
+  min-height: 400px;
+  background: var(--white);
+  padding: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  grid-template-rows: 100px 1fr;
+  overflow: visible !important;
+}
+
+.details__vehicle .cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.details__vehicle .cardHeader .all-button{
+  display: flex;
+}
+
+.details__vehicle .cardHeader .all-button > .btn{
+  margin: 5px;
+}
+
+.details__vehicle table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  z-index: 1;
+}
+.details__vehicle table thead td {
+  font-weight: 700;
+}
+.details__vehicle .recentCt table tr {
+  color: var(--black1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.details__vehicle .recentCt  table tr:last-child {
+  border-bottom: none;
+}
+.details__vehicle .recentCt table tbody tr:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+.details__vehicle .recentCt table tr td {
+  padding: 10px;
+}
+.details__vehicle .recentCt table tr td:last-child {
+  text-align: end;
+}
+
+.details__vehicle .recentCt .overall tr td:last-child {
+  text-align: center;
+}
+
+.details__vehicle .recentCt table tr td:nth-child(2) {
+  text-align: center;
+}
+.details__vehicle .recentCt table tr td:nth-child(3) {
+  text-align: center;
+}
+.details__vehicle .recentCt table tr td:nth-child(4) {
+  margin: 5px 0;
+  text-align: center;
+}
+span{
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.status-paid{
+  background-color: #7DB927;
+  color: #fff;
+}
+
+.status-unpaid{
+  background-color: #B6261D;
+  color: #fff;
+}
+
+.btn{
+  cursor: pointer;
+}
+
+.btn-details{
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: #8de02c;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ant-form-item-label {
+  overflow: visible !important;
+}
+
+.btn-details.delete-icon{
+  background-color: #B6261D;
+  padding: 5px;
+}
+
+/* styles.css hoặc trong <style> của bạn */
+.checkbox-group {
+  display: flex;
+  flex-direction: column; /* Xếp các checkbox theo chiều dọc */
+}
+
+.checkbox-group .ant-checkbox-wrapper {
+  margin-bottom: 8px; /* Khoảng cách giữa các checkbox */
+}
+
+.ant-select-multiple .ant-select-selection-item{
+  height: auto;
+}
+
+.ant-select-selection-item{
+  padding: 1px;
+}
+
+.gutter-row{
+  display: flex;
+  flex-direction: column;
+}
+
+.filter_fee{
+  height: 130px;
+}
+
+.ant-picker{
+  padding: 0px 11px;
+  width: 90%;
+}
+
+label{
+  position: relative!important;
+}
+
+.checkbox-btn{
+  top: 10px;
+}
+
+.payment{
+  width: 100%;
+  padding: 10px;
+}
+
+.payment > thead > td{
+  font-weight: 600;
+}
+
+.payment > thead > td:last-child{
+  text-align: end;
+}
+
+.payment > tbody > tr > td:last-child{
+  text-align: end;
+}
+
+table td{
+  padding: 10px;
+}
+
+.ant-modal-content{
+  width: 130%;
+}
+
+hr{
+  border-top: 0.25px solid #0000002b;
+}
+

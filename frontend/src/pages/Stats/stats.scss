@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0");
+
+/* variables */
+
+
+:root {
+  --clr-primary: #7380ec;
+  --clr-danger: #ff7782;
+  --clr-success: #41f1b6;
+  --clr-white: #fff;
+  --clr-info-dark: #7d8da1;
+  --clr-info-light: #dce1eb;
+  --clr-dark: #363949;
+  --clr-warnig: #ff4edc;
+  --clr-light: rgba(132, 139, 200, 0.18);
+  --clr-primary-variant: #111e88;
+  --clr-dark-variant: #677483;
+  --clr-color-background: #f6f6f9;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+  --box-shadow: 0 2rem 3rem var(--clr-light);
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  appearance: none;
+}
+
+
+.container__header  {
+  display: grid;
+  width: 96%;
+  gap: 1.8rem;
+  grid-template-columns: 75% 25%;
+  margin: 0 auto;
+  align-items: start;
+  //max-height: 45vh;
+
+  h2{
+    font-weight: 700;
+    color: var(--blue);
+  }
+}
+
+a{
+  color: var(--clr-dark);
+}
+
+h1{
+  font-weight: 800;
+  font-size: 2.8rem;
+}
+h2{
+  font-size: 1.4rem;
+}
+h3{
+  font-size: 0.87;
+}
+h4{
+  font-weight: 0.8rem;
+}
+h5{
+  font-size: 0.77rem;
+}
+small{
+  font-size: 0.75rem;
+}
+.profile-photo img{
+  width: 2.8rem;
+  height: 2.8rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.text-muted{
+  color: var(--clr-info-dark);
+}
+p{
+  color: var(--clr-dark-variant);
+}
+b{
+  color: var(--clr-dark);
+}
+.primary {
+  color: var(--clr-primary);
+}
+
+.success {
+  color: var(--clr-success);
+}
+
+.danger {
+  color: var(--clr-danger);
+}
+
+.warning {
+  color: var(--clr-warnig);
+}
+
+ /* ----------------------------
+ --------- Main--------------
+ ------------------------------ */
+
+ main{
+  margin-top: 1.4rem;
+  width: auto;
+ }
+
+main .insights{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 1.6rem;
+}
+main .insights>div{
+   background-color: var(--clr-white);
+   padding: var(--card-padding);
+   border-radius: var(--card-border-radius);
+   margin-top: 1rem;
+   box-shadow: var(--box-shadow);
+   transition: all .3s ease;
+}
+
+main .insights > div:hover{
+  box-shadow: none;
+}
+main .insights>div  span{
+   background: coral;
+    padding: 0.5rem;
+     border-radius: 50%;
+     color: var(--clr-white);
+     font-size: 2rem; 
+  }
+
+main .insights > div.expenses span{
+   background: var(--clr-danger);
+}
+main .insights > div.income span{
+  background: var(--clr-success);
+}
+
+main .insights > div .middle{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+main .insights > div .middle h1{
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+main h1{
+  color: var(--clr-dark);
+}
+main .insights h1{
+  color: var(--clr-dark);
+}
+main .insights h3{
+  color: var(--clr-dark);
+}
+main .insights p{
+  color: var(--clr-dark);
+}
+main .insights h3{
+    color: var(--clr-dark);
+}
+
+main .insights .progress{
+  position: relative;
+  height: 68px;
+  width: 68px;
+  border-radius: 50px;
+}
+
+main .insights svg{
+  height: 150px;
+  width: 150px;
+  position: relative;
+  top: 0;
+}
+
+main .insights svg circle{
+  fill: none;
+  stroke: var(--clr-primary);
+  transform: rotate(270,80,80);
+  stroke-width: 5;
+}
+
+
+main .insights .progress .number{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-39%, -45%);
+}
+
+/* recent order */
+
+.container__body  {
+  display: grid;
+  width: 96%;
+  gap: 1.8rem;
+  grid-template-columns: auto;
+  margin: 0 auto;
+}
+
+main .recent_order{
+   margin-top: 2rem;
+   width: 96%;
+}
+
+main .recent_order h2{
+  font-weight: 700;
+  color: var(--blue);
+}
+
+main .recent_order h2{
+  margin-bottom: 0.8rem;
+}
+main .recent_order table{
+  background: var(--clr-white);
+  width: 100%;
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  transition: all .3s ease;
+  color: var(--clr-dark);
+}
+main .recent_order table:hover{
+  box-shadow: none;
+}
+
+main table tbody td{
+   height: 3.8rem;
+   border-bottom: 1px solid var(--clr-white);
+   color:var(--clr-dark-variant)
+}
+main table tbody tr:last-child td{
+   border: none;
+}
+
+
+main .recent_order a{
+  text-align: center;
+  display: block;
+  margin: 1rem;
+}
+
+
+/*********************
+Right Side
+**********************/
+
+.right{
+  margin-top: 1.4rem;
+}
+.right h2{
+  color: var(--blue);
+}
+
+/* recent update */
+
+.right .recent_updates{
+  background-color: var(--clr-white);
+  border-radius: var(--card-border-radius);
+  margin-top: 1rem;
+  box-shadow: var(--box-shadow);
+  transition: all .3s ease;
+  overflow-y: auto;
+  //max-height: 71%;
+
+  h2{
+    padding-left: 5px;
+  }
+}
+
+.right .recent_updates::-webkit-scrollbar {
+  display: none; /* Ẩn thanh cuộn */
+}
+.right .recent_updates .updates{
+  background-color: var(--clr-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  transition: all .3s ease;
+  overflow: visible;
+}
+.right .recent_updates:hover{
+  box-shadow: none;
+}
+.right .recent_updates .update{
+   display: grid;
+   grid-template-columns: 2.6rem auto;
+   gap: 1rem;
+   padding-bottom: 1rem;
+}
+.material-symbols-sharp{
+  font-family: 'Material Symbols Sharp'!important;
+}
+
+
+/* **********8
+MEDIA QUERY
+****************/
+
+@media screen and (max-width:1200px) {
+    .container{
+      width: 94%;
+      grid-template-columns: 7rem auto 14rem;
+    }
+    aside .sidebar h3{
+      display: none;
+    }
+    aside .sidebar a{
+      width: 5.6rem;
+    }
+    aside .sidebar a:last-child{
+      position: relative;
+      margin-top: 1.8rem;
+    }
+    main .insights{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* ****************
+MEDIA QUERY PHONE
+************************/
+
+@media screen and (max-width:768px) {
+  .container__header{
+    width: 100%;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .container__body{
+    width: 100%;
+    grid-template-columns: repeat(1,1fr);
+  
+  }
+  
+  @keyframes menuLeft {
+      to{
+        left: 0;
+      }
+  }
+
+    .right .top{
+       position: fixed;
+       top: 0;
+       left: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 0 0.8rem;
+       background: var(--clr-white);
+       height: 4.6rem;
+       width: 100%;
+       z-index: 2;
+       box-shadow: 0 1rem 1rem var(--clr-light);
+       margin: 0;
+    }
+
+
+ main .insights{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 1.6rem;
+  padding: 40px;
+ }
+ main .recent_order{
+  padding: 30px;
+  margin: 0 auto;
+ }
+
+   .right .recent_order{
+    padding: 0 30px;
+   }
+   .right .recent_updates{
+    padding: 0 40px;
+   }
+
+
+}

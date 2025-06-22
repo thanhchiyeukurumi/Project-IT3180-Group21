@@ -1,0 +1,395 @@
+[{
+  "_id": {
+    "$oid": "676189d61a32b990837befed"
+  },
+  "name": "Nguyễn Văn Cường",
+  "cic": "345678901",
+  "dob": "1998-08-30",
+  "gender": "Nam",
+  "status": "Thường trú",
+  "ethnicity": "Kinh",
+  "nation": "Việt Nam",
+  "hometown": "Hà Nội",
+  "movingIn": "2020-01-01",
+  "endTemporary": null,
+  "contact_phone": "0912123456",
+  "occupation": "Kĩ sư",
+  "householdId": {
+    "$oid": "67618ada1a32b990837beff3"
+  }
+},
+{
+  "_id": {
+    "$oid": "676189d61a32b990837beff0"
+  },
+  "name": "Nguyễn Hồng Vân",
+  "cic": "8802397342",
+  "dob": "2004-07-25",
+  "gender": "Nữ",
+  "status": "Thường trú",
+  "ethnicity": "Kinh",
+  "nation": "Việt Nam",
+  "hometown": "Hà Nội",
+  "movingIn": "2024-07-25",
+  "endTemporary": null,
+  "contact_phone": "0979789783",
+  "occupation": "Sinh viên",
+  "householdId": {
+    "$oid": "67618ada1a32b990837beff3"
+  }
+},
+{
+  "_id": {
+    "$oid": "676189d61a32b990837befef"
+  },
+  "name": "Nguyễn Văn Hoàng",
+  "cic": "345678901",
+  "dob": {
+    "$date": "2005-05-14T17:00:00.000Z"
+  },
+  "gender": "Nam",
+  "status": "Thường trú",
+  "ethnicity": "Kinh",
+  "nation": "Việt Nam",
+  "hometown": "Hà Nội",
+  "movingIn": {
+    "$date": "2022-05-14T17:00:00.000Z"
+  },
+  "endTemporary": null,
+  "contact_phone": "0979798721",
+  "occupation": "Sinh viên",
+  "householdId": {
+    "$oid": "67618ada1a32b990837beff3"
+  }
+},
+{
+  "_id": {
+    "$oid": "676197641a32b990837beffb"
+  },
+  "name": "Phạm Văn Vinh",
+  "cic": "345354901",
+  "dob": "2003-08-30",
+  "gender": "Nam",
+  "status": "Tạm trú",
+  "ethnicity": "Kinh",
+  "nation": "Việt Nam",
+  "hometown": "Hải Phòng",
+  "movingIn": "2024-01-01",
+  "endTemporary": "2025-10-03",
+  "contact_phone": "0995843456",
+  "occupation": "Sinh Viên",
+  "householdId": {
+    "$oid": "676198171a32b990837bf000"
+  }
+},
+{
+  "_id": {
+    "$oid": "676197641a32b990837beff9"
+  },
+  "name": "Phạm Văn Nam",
+  "cic": "408679302",
+  "dob": "1990-06-19",
+  "gender": "Nam",
+  "status": "Thường trú",
+  "ethnicity": "Kinh",
+  "nation": "Việt Nam",
+  "hometown": "Hải Phòng",
+  "movingIn": "2020-07-01",
+  "endTemporary": null,
+  "contact_phone": "0912989678",
+  "occupation": "Kĩ sư",
+  "householdId": {
+    "$oid": "676198171a32b990837bf000"
+  }
+},
+{
+  "_id": {
+    "$oid": "676197641a32b990837beffa"
+  },
+  "name": "Hoàng Thị Hoài",
+  "cic": "234567991",
+  "dob": "1994-10-15",
+  "gender": "Nữ",
+  "status": "Thường trú",
+  "ethnicity": "Kinh",
+  "nation": "Việt Nam",
+  "hometown": "Hà Nam",
+  "movingIn": "2020-07-01",
+  "endTemporary": null,
+  "contact_phone": "0987659821",
+  "occupation": "Nội trợ",
+  "householdId": {
+    "$oid": "676198171a32b990837bf000"
+  }
+},
+{
+  "_id": {
+    "$oid": "676199da1a32b990837bf003"
+  },
+  "name": "Hoàng Bảo Vinh",
+  "cic": "408678902",
+  "dob": {
+    "$date": "1998-07-19T17:00:00.000Z"
+  },
+  "gender": "Nữ",
+  "status": "Tạm vắng",
+  "ethnicity": "Kinh",
+  "nation": "Việt Nam",
+  "hometown": "Hải Phòng",
+  "movingIn": {
+    "$date": "2022-07-31T17:00:00.000Z"
+  },
+  "endTemporary": {
+    "$date": "2025-02-04T17:00:00.000Z"
+  },
+  "contact_phone": "0917349678",
+  "occupation": "Công An",
+  "householdId": {
+    "$oid": "67619a3b1a32b990837bf009"
+  }
+},
+{
+  "_id": {
+    "$oid": "676199da1a32b990837bf004"
+  },
+  "name": "Võ Hoài Vân",
+  "cic": "201767991",
+  "dob": "1999-10-15",
+  "gender": "Nữ",
+  "status": "Thường trú",
+  "ethnicity": "Kinh",
+  "nation": "Việt Nam",
+  "hometown": "Nam Định",
+  "movingIn": "2022-08-01",
+  "endTemporary": null,
+  "contact_phone": "0990459821",
+  "occupation": "Kĩ sư",
+  "householdId": {
+    "$oid": "67619a3b1a32b990837bf009"
+  }
+},
+{
+  "_id": {
+    "$oid": "676199da1a32b990837bf005"
+  },
+  "name": "Hoàng Bảo Ngọc",
+  "cic": "",
+  "dob": "2024-09-30",
+  "gender": "Nữ",
+  "status": "Thường trú",
+  "ethnicity": "Kinh",
+  "nation": "Việt Nam",
+  "hometown": "Hải Phòng",
+  "movingIn": "2024-09-30",
+  "endTemporary": null,
+  "contact_phone": "",
+  "occupation": "Chưa đi học",
+  "householdId": {
+    "$oid": "67619a3b1a32b990837bf009"
+  }
+},
+{
+  "_id": {
+    "$oid": "6761a0031a32b990837bf00b"
+  },
+  "name": "Đào Ngọc Hưng",
+  "cic": "407978902",
+  "dob": {
+    "$date": "1994-06-16T17:00:00.000Z"
+  },
+  "gender": "Nam",
+  "status": "Thường trú",
+  "ethnicity": "Kinh",
+  "nation": "Việt Nam",
+  "hometown": "Thái Nguyên",
+  "movingIn": {
+    "$date": "2023-07-31T17:00:00.000Z"
+  },
+  "endTemporary": null,
+  "contact_phone": "0912229679",
+  "occupation": "Kĩ sư",
+  "householdId": {
+    "$oid": "6761a0551a32b990837bf010"
+  }
+},
+{
+  "_id": {
+    "$oid": "6761a0031a32b990837bf00c"
+  },
+  "name": "Phạm Thùy Linh",
+  "cic": "2012482991",
+  "dob": {
+    "$date": "1994-11-14T17:00:00.000Z"
+  },
+  "gender": "Nữ",
+  "status": "Thường trú",
+  "ethnicity": "Kinh",
+  "nation": "Việt Nam",
+  "hometown": "Phú Thọ",
+  "movingIn": {
+    "$date": "2023-07-31T17:00:00.000Z"
+  },
+  "endTemporary": null,
+  "contact_phone": "0990879822",
+  "occupation": "Nhân viên văn phòng",
+  "householdId": {
+    "$oid": "6761a0551a32b990837bf010"
+  }
+},
+{
+  "_id": {
+    "$oid": "6761a1421a32b990837bf012"
+  },
+  "name": "Vũ Huy Dũng",
+  "cic": "400928902",
+  "dob": "1998-05-17",
+  "gender": "Nam",
+  "status": "Thường trú",
+  "ethnicity": "Kinh",
+  "nation": "Việt Nam",
+  "hometown": "Thái Nguyên",
+  "movingIn": "2023-03-01",
+  "endTemporary": null,
+  "contact_phone": "0932879678",
+  "occupation": "Kĩ sư",
+  "householdId": {
+    "$oid": "6761a1b71a32b990837bf017"
+  }
+},
+{
+  "_id": {
+    "$oid": "6761a1421a32b990837bf013"
+  },
+  "name": "Tạ Ngọc Huyền Trang",
+  "cic": "2012307991",
+  "dob": "1996-07-30",
+  "gender": "Nữ",
+  "status": "Thường trú",
+  "ethnicity": "Kinh",
+  "nation": "Việt Nam",
+  "hometown": "Thái Nguyên",
+  "movingIn": "2023-03-01",
+  "endTemporary": null,
+  "contact_phone": "0993709821",
+  "occupation": "Kĩ sư",
+  "relation_to_head": "Vợ chồng",
+  "householdId": {
+    "$oid": "6761a1b71a32b990837bf017"
+  }
+},
+{
+  "_id": {
+    "$oid": "6761a2e31a32b990837bf019"
+  },
+  "name": "Đỗ Đình Dương",
+  "cic": "400876302",
+  "dob": "1999-06-18",
+  "gender": "Nam",
+  "status": "Tạm trú",
+  "ethnicity": "Kinh",
+  "nation": "Việt Nam",
+  "hometown": "Bắc Giang",
+  "movingIn": "2024-08-01",
+  "endTemporary": null,
+  "contact_phone": "0932879678",
+  "occupation": "Bộ đội",
+  "householdId": {
+    "$oid": "6761a3291a32b990837bf01e"
+  }
+},
+{
+  "_id": {
+    "$oid": "6761a2e31a32b990837bf01a"
+  },
+  "name": "Nguyễn Thị Vân Anh",
+  "cic": "2014657991",
+  "dob": "1999-09-30",
+  "gender": "Nữ",
+  "status": "Thường trú",
+  "ethnicity": "Kinh",
+  "nation": "Việt Nam",
+  "hometown": "Bắc Ninh",
+  "movingIn": "2024-08-01",
+  "endTemporary": null,
+  "contact_phone": "0997234821",
+  "occupation": "Giáo viên",
+  "relation_to_head": "Vợ chồng",
+  "householdId": {
+    "$oid": "6761a3291a32b990837bf01e"
+  }
+},
+{
+  "_id": {
+    "$oid": "6763856759e1cc38d777942b"
+  },
+  "name": "Trần An",
+  "cic": "10101010",
+  "dob": {
+    "$date": "2020-10-10T00:00:00.000Z"
+  },
+  "gender": "Nam",
+  "status": "Thường trú",
+  "ethnicity": "Mường",
+  "nation": "Việt Nam",
+  "hometown": "Hà Nội",
+  "movingIn": {
+    "$date": "2020-10-10T00:00:00.000Z"
+  },
+  "endTemporary": null,
+  "contact_phone": "090909090",
+  "occupation": "Không",
+  "__v": 0,
+  "householdId": {
+    "$oid": "67619a3b1a32b990837bf009"
+  }
+},
+{
+  "_id": {
+    "$oid": "6772e666e1359851fdf9a3b3"
+  },
+  "householdId": {
+    "$oid": "6772e666e1359851fdf9a3b6"
+  },
+  "name": "Lê Tín",
+  "cic": "11111111111",
+  "dob": {
+    "$date": "2000-10-10T00:00:00.000Z"
+  },
+  "gender": "Nam",
+  "status": "Thường trú",
+  "ethnicity": "Kinh",
+  "nation": "Việt Nam",
+  "hometown": "Hà Nội",
+  "movingIn": {
+    "$date": "2020-01-01T00:00:00.000Z"
+  },
+  "endTemporary": null,
+  "contact_phone": "01234567891",
+  "occupation": "Không",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6772f5fca855f5cfaa6b84d9"
+  },
+  "householdId": {
+    "$oid": "6772f5fca855f5cfaa6b84dc"
+  },
+  "name": "Vũ Văn Công",
+  "cic": "027304000333",
+  "dob": {
+    "$date": "1990-10-10T00:00:00.000Z"
+  },
+  "gender": "Nam",
+  "status": "Thường trú",
+  "ethnicity": "Kinh",
+  "nation": "Việt Nam",
+  "hometown": "Hà Nội",
+  "movingIn": {
+    "$date": "2020-10-10T00:00:00.000Z"
+  },
+  "endTemporary": null,
+  "contact_phone": "0898444333",
+  "occupation": "Kỹ sư",
+  "__v": 0
+}]

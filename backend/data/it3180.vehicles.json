@@ -1,0 +1,112 @@
+[{
+  "_id": {
+    "$oid": "676344c36b5b0ed3485ec1ad"
+  },
+  "ownName": "Nguyễn Văn Cường",
+  "household_id": {
+    "$oid": "67618ada1a32b990837beff3"
+  },
+  "vehicle": [
+    {
+      "plate": "29-B1-9867",
+      "vehicle_type": "Xe máy",
+      "_id": {
+        "$oid": "676356ed1ec69565a434f26a"
+      }
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "67634625da57f5b38e174f4d"
+  },
+  "ownName": "Hoàng Bảo Vinh",
+  "household_id": {
+    "$oid": "67619a3b1a32b990837bf009"
+  },
+  "vehicle": [],
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "6763521edefbab8095282134"
+  },
+  "ownName": "Đỗ Đình Dương",
+  "household_id": {
+    "$oid": "6761a3291a32b990837bf01e"
+  },
+  "vehicle": [
+    {
+      "plate": "17-C1-8237",
+      "vehicle_type": "Xe máy",
+      "_id": {
+        "$oid": "67635495defbab80952823a2"
+      }
+    },
+    {
+      "plate": "29A-0234",
+      "vehicle_type": "Ô tô",
+      "_id": {
+        "$oid": "676c6a876f7e779979b572fc"
+      }
+    }
+  ],
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "6763542adefbab80952822ce"
+  },
+  "ownName": "Phạm Văn Nam",
+  "household_id": {
+    "$oid": "676198171a32b990837bf000"
+  },
+  "vehicle": [],
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "67635460defbab809528233b"
+  },
+  "ownName": "Đào Ngọc Hưng",
+  "household_id": {
+    "$oid": "6761a0551a32b990837bf010"
+  },
+  "vehicle": [
+    {
+      "plate": "99-A1-2412",
+      "vehicle_type": "Xe máy",
+      "_id": {
+        "$oid": "67635460defbab809528233c"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "676357b81ec69565a434f2da"
+  },
+  "ownName": "Vũ Huy Dũng",
+  "household_id": {
+    "$oid": "6761a1b71a32b990837bf017"
+  },
+  "vehicle": [
+    {
+      "plate": "17-K1-2355",
+      "vehicle_type": "Xe máy",
+      "_id": {
+        "$oid": "676357b81ec69565a434f2db"
+      }
+    },
+    {
+      "plate": "90-F1-12345",
+      "vehicle_type": "Xe máy",
+      "_id": {
+        "$oid": "6772f1af722c19f6eb6e3d2e"
+      }
+    }
+  ],
+  "__v": 1
+}]

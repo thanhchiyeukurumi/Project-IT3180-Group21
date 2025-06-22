@@ -1,0 +1,574 @@
+[{
+  "_id": {
+    "$oid": "6762cc5fe0f210e6dee49f96"
+  },
+  "fee_id": "6762cc5ee0f210e6dee49f90",
+  "payment_id": "2RXD76M5",
+  "household_id": "67618ada1a32b990837beff3",
+  "amount": 4000,
+  "payment_date": {
+    "$date": "2025-01-18T13:21:35.071Z"
+  },
+  "status": "Đã thanh toán",
+  "count": 85,
+  "__v": 0,
+  "bill_id": "m4txdtxp",
+  "bill_time": {
+    "$date": "2024-12-18T13:25:33.562Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6762cc5fe0f210e6dee49f97"
+  },
+  "fee_id": "6762cc5ee0f210e6dee49f90",
+  "payment_id": "0QPKLDRL",
+  "household_id": "676198171a32b990837bf000",
+  "amount": 4000,
+  "payment_date": {
+    "$date": "2025-01-18T13:21:35.071Z"
+  },
+  "status": "Đã thanh toán",
+  "count": 100,
+  "__v": 0,
+  "bill_id": "m4txa1pl",
+  "bill_time": {
+    "$date": "2024-12-18T13:22:35.820Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6762cc5fe0f210e6dee49f98"
+  },
+  "fee_id": "6762cc5ee0f210e6dee49f90",
+  "payment_id": "YYPI2QI9",
+  "household_id": "67619a3b1a32b990837bf009",
+  "amount": 4000,
+  "payment_date": {
+    "$date": "2025-01-18T13:21:35.071Z"
+  },
+  "status": "Đã thanh toán",
+  "count": 85,
+  "__v": 0,
+  "bill_id": "m4tx974k",
+  "bill_time": {
+    "$date": "2024-12-18T13:21:56.237Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6762cc5fe0f210e6dee49f99"
+  },
+  "fee_id": "6762cc5ee0f210e6dee49f90",
+  "payment_id": "TTBPJJEO",
+  "household_id": "6761a0551a32b990837bf010",
+  "amount": 4000,
+  "payment_date": {
+    "$date": "2025-01-18T13:21:35.071Z"
+  },
+  "status": "Đã thanh toán",
+  "count": 85,
+  "__v": 0,
+  "bill_id": "m4tx9wmg",
+  "bill_time": {
+    "$date": "2024-12-18T13:22:29.298Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6762cc5fe0f210e6dee49f9a"
+  },
+  "fee_id": "6762cc5ee0f210e6dee49f90",
+  "payment_id": "7TY55IHN",
+  "household_id": "6761a1b71a32b990837bf017",
+  "amount": 4000,
+  "payment_date": {
+    "$date": "2025-01-18T13:21:35.071Z"
+  },
+  "status": "Đã thanh toán",
+  "count": 85,
+  "__v": 0,
+  "bill_id": "m4u3apvi",
+  "bill_time": {
+    "$date": "2024-12-18T16:11:05.788Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6762cc5fe0f210e6dee49f9b"
+  },
+  "fee_id": "6762cc5ee0f210e6dee49f90",
+  "payment_id": "7DP0XXTG",
+  "household_id": "6761a3291a32b990837bf01e",
+  "amount": 4000,
+  "payment_date": {
+    "$date": "2025-01-18T13:21:35.071Z"
+  },
+  "status": "Đã thanh toán",
+  "count": 85,
+  "__v": 0,
+  "bill_id": "m4txgp0p",
+  "bill_time": {
+    "$date": "2024-12-18T13:27:49.530Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "676319f86b5b0ed3485eadc2"
+  },
+  "fee_id": "676319f86b5b0ed3485eadb7",
+  "payment_id": "T4ELS0VN",
+  "household_id": "67618ada1a32b990837beff3",
+  "amount": 5000,
+  "payment_date": {
+    "$date": "2025-01-18T18:52:40.506Z"
+  },
+  "status": "Đã thanh toán",
+  "count": 85,
+  "__v": 0,
+  "bill_id": "m59hb9ex",
+  "bill_time": {
+    "$date": "2024-12-29T10:39:57.738Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "676319f86b5b0ed3485eadc3"
+  },
+  "fee_id": "676319f86b5b0ed3485eadb7",
+  "payment_id": "CCE300J4",
+  "household_id": "676198171a32b990837bf000",
+  "amount": 5000,
+  "payment_date": {
+    "$date": "2025-01-18T18:52:40.506Z"
+  },
+  "status": "Đã thanh toán",
+  "count": 100,
+  "__v": 0,
+  "bill_id": "m515mflj",
+  "bill_time": {
+    "$date": "2024-12-23T14:50:34.153Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "676319f86b5b0ed3485eadc4"
+  },
+  "fee_id": "676319f86b5b0ed3485eadb7",
+  "payment_id": "ZPNFY9MV",
+  "household_id": "67619a3b1a32b990837bf009",
+  "amount": 5000,
+  "payment_date": {
+    "$date": "2025-01-18T18:52:40.506Z"
+  },
+  "status": "Đã thanh toán",
+  "count": 85,
+  "__v": 0,
+  "bill_id": "m59hm30x",
+  "bill_time": {
+    "$date": "2024-12-29T10:48:22.083Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "676319f86b5b0ed3485eadc5"
+  },
+  "fee_id": "676319f86b5b0ed3485eadb7",
+  "payment_id": "ECT3LCEF",
+  "household_id": "6761a0551a32b990837bf010",
+  "amount": 5000,
+  "payment_date": {
+    "$date": "2025-01-18T18:52:40.506Z"
+  },
+  "status": "Đã thanh toán",
+  "count": 85,
+  "__v": 0,
+  "bill_id": "m4un2v7c",
+  "bill_time": {
+    "$date": "2024-12-19T01:24:52.974Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "676319f86b5b0ed3485eadc6"
+  },
+  "fee_id": "676319f86b5b0ed3485eadb7",
+  "payment_id": "5G60W369",
+  "household_id": "6761a1b71a32b990837bf017",
+  "amount": 5000,
+  "payment_date": {
+    "$date": "2025-01-18T18:52:40.506Z"
+  },
+  "status": "Đã thanh toán",
+  "count": 85,
+  "__v": 0,
+  "bill_id": "m4un2v7c",
+  "bill_time": {
+    "$date": "2024-12-19T01:24:52.974Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "676319f86b5b0ed3485eadc7"
+  },
+  "fee_id": "676319f86b5b0ed3485eadb7",
+  "payment_id": "9DH3P580",
+  "household_id": "6761a3291a32b990837bf01e",
+  "amount": 5000,
+  "payment_date": {
+    "$date": "2025-01-18T18:52:40.506Z"
+  },
+  "status": "Đã thanh toán",
+  "count": 85,
+  "__v": 0,
+  "bill_id": "m59gbqc4",
+  "bill_time": {
+    "$date": "2024-12-29T10:12:19.831Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67726706ba6a5985062f3938"
+  },
+  "fee_id": "6771a5c5bd5e8085394062fc",
+  "payment_id": "NITVZSXC",
+  "household_id": "67618ada1a32b990837beff3",
+  "amount": 70000,
+  "payment_date": {
+    "$date": "2025-01-30T09:25:26.413Z"
+  },
+  "status": "Đã thanh toán",
+  "count": 1,
+  "__v": 0,
+  "bill_id": "m5bff91b",
+  "bill_time": {
+    "$date": "2024-12-30T19:22:38.994Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67726706ba6a5985062f3939"
+  },
+  "fee_id": "6771a5c5bd5e8085394062fc",
+  "payment_id": "NPTMBEQ4",
+  "household_id": "6761a0551a32b990837bf010",
+  "amount": 70000,
+  "payment_date": {
+    "$date": "2025-01-30T09:25:26.413Z"
+  },
+  "status": "Chưa thanh toán",
+  "count": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67726706ba6a5985062f393a"
+  },
+  "fee_id": "6771a5c5bd5e8085394062fc",
+  "payment_id": "HD1JJ816",
+  "household_id": "6761a1b71a32b990837bf017",
+  "amount": 70000,
+  "payment_date": {
+    "$date": "2025-01-30T09:25:26.413Z"
+  },
+  "status": "Chưa thanh toán",
+  "count": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67726706ba6a5985062f393b"
+  },
+  "fee_id": "6771a5c5bd5e8085394062fc",
+  "payment_id": "FR04QEFT",
+  "household_id": "6761a3291a32b990837bf01e",
+  "amount": 70000,
+  "payment_date": {
+    "$date": "2025-01-30T09:25:26.413Z"
+  },
+  "status": "Chưa thanh toán",
+  "count": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67726719ba6a5985062f3adb"
+  },
+  "fee_id": "677141bdc174c3ac2fbd1dc6",
+  "payment_id": "J18RAW3C",
+  "household_id": "6761a3291a32b990837bf01e",
+  "amount": 1200000,
+  "payment_date": {
+    "$date": "2025-01-30T09:25:45.832Z"
+  },
+  "status": "Chưa thanh toán",
+  "count": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67726b7cba6a5985062f4821"
+  },
+  "fee_id": "6771a656bd5e808539406744",
+  "payment_id": "5BTCYY8K",
+  "household_id": "67618ada1a32b990837beff3",
+  "amount": 50000,
+  "payment_date": {
+    "$date": "2025-01-30T09:44:28.854Z"
+  },
+  "status": "Đã thanh toán",
+  "count": 1,
+  "__v": 0,
+  "bill_id": "m5bfg6ub",
+  "bill_time": {
+    "$date": "2024-12-30T19:23:20.482Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67726b7cba6a5985062f4822"
+  },
+  "fee_id": "6771a656bd5e808539406744",
+  "payment_id": "TFAA49CL",
+  "household_id": "676198171a32b990837bf000",
+  "amount": 50000,
+  "payment_date": {
+    "$date": "2025-01-30T09:44:28.854Z"
+  },
+  "status": "Chưa thanh toán",
+  "count": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6772f235722c19f6eb6e40cf"
+  },
+  "fee_id": "6762cc41e0f210e6dee49f5e",
+  "payment_id": "WOAXXG1D",
+  "household_id": "67618ada1a32b990837beff3",
+  "amount": 5000,
+  "payment_date": {
+    "$date": "2025-01-30T19:19:17.311Z"
+  },
+  "status": "Đã thanh toán",
+  "count": 85,
+  "__v": 0,
+  "bill_id": "m5bfgdbu",
+  "bill_time": {
+    "$date": "2024-12-30T19:23:28.911Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6772f235722c19f6eb6e40d0"
+  },
+  "fee_id": "6762cc41e0f210e6dee49f5e",
+  "payment_id": "MS5MH2GD",
+  "household_id": "676198171a32b990837bf000",
+  "amount": 5000,
+  "payment_date": {
+    "$date": "2025-01-30T19:19:17.311Z"
+  },
+  "status": "Chưa thanh toán",
+  "count": 100,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6772f235722c19f6eb6e40d1"
+  },
+  "fee_id": "6762cc41e0f210e6dee49f5e",
+  "payment_id": "G1ESGMJT",
+  "household_id": "67619a3b1a32b990837bf009",
+  "amount": 5000,
+  "payment_date": {
+    "$date": "2025-01-30T19:19:17.311Z"
+  },
+  "status": "Chưa thanh toán",
+  "count": 85,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6772f235722c19f6eb6e40d2"
+  },
+  "fee_id": "6762cc41e0f210e6dee49f5e",
+  "payment_id": "BS4MV3QO",
+  "household_id": "6761a0551a32b990837bf010",
+  "amount": 5000,
+  "payment_date": {
+    "$date": "2025-01-30T19:19:17.311Z"
+  },
+  "status": "Chưa thanh toán",
+  "count": 85,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6772f235722c19f6eb6e40d3"
+  },
+  "fee_id": "6762cc41e0f210e6dee49f5e",
+  "payment_id": "MLZIQ7RO",
+  "household_id": "6761a1b71a32b990837bf017",
+  "amount": 5000,
+  "payment_date": {
+    "$date": "2025-01-30T19:19:17.311Z"
+  },
+  "status": "Chưa thanh toán",
+  "count": 85,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6772f235722c19f6eb6e40d4"
+  },
+  "fee_id": "6762cc41e0f210e6dee49f5e",
+  "payment_id": "7W5UQ6JS",
+  "household_id": "6761a3291a32b990837bf01e",
+  "amount": 5000,
+  "payment_date": {
+    "$date": "2025-01-30T19:19:17.311Z"
+  },
+  "status": "Chưa thanh toán",
+  "count": 85,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6772f235722c19f6eb6e40d5"
+  },
+  "fee_id": "6762cc41e0f210e6dee49f5e",
+  "payment_id": "EC0IO52Q",
+  "household_id": "6772e666e1359851fdf9a3b6",
+  "amount": 5000,
+  "payment_date": {
+    "$date": "2025-01-30T19:19:17.311Z"
+  },
+  "status": "Chưa thanh toán",
+  "count": 85,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6772f8a5a855f5cfaa6b89dc"
+  },
+  "fee_id": "677276fc2e8e2cb7ebce420a",
+  "payment_id": "CTTV7FIN",
+  "household_id": "67618ada1a32b990837beff3",
+  "amount": 14000,
+  "payment_date": {
+    "$date": "2025-01-30T19:46:45.355Z"
+  },
+  "status": "Đã thanh toán",
+  "count": 85,
+  "__v": 0,
+  "bill_id": "m5bgap5r",
+  "bill_time": {
+    "$date": "2024-12-30T19:47:04.283Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6772f8a5a855f5cfaa6b89dd"
+  },
+  "fee_id": "677276fc2e8e2cb7ebce420a",
+  "payment_id": "QTBAQK0A",
+  "household_id": "676198171a32b990837bf000",
+  "amount": 14000,
+  "payment_date": {
+    "$date": "2025-01-30T19:46:45.355Z"
+  },
+  "status": "Chưa thanh toán",
+  "count": 100,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6772f8a5a855f5cfaa6b89de"
+  },
+  "fee_id": "677276fc2e8e2cb7ebce420a",
+  "payment_id": "3NR6ZNDV",
+  "household_id": "67619a3b1a32b990837bf009",
+  "amount": 14000,
+  "payment_date": {
+    "$date": "2025-01-30T19:46:45.355Z"
+  },
+  "status": "Chưa thanh toán",
+  "count": 85,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6772f8a5a855f5cfaa6b89df"
+  },
+  "fee_id": "677276fc2e8e2cb7ebce420a",
+  "payment_id": "90GGNAOM",
+  "household_id": "6761a0551a32b990837bf010",
+  "amount": 14000,
+  "payment_date": {
+    "$date": "2025-01-30T19:46:45.355Z"
+  },
+  "status": "Chưa thanh toán",
+  "count": 85,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6772f8a5a855f5cfaa6b89e0"
+  },
+  "fee_id": "677276fc2e8e2cb7ebce420a",
+  "payment_id": "XRRJUNRD",
+  "household_id": "6761a1b71a32b990837bf017",
+  "amount": 14000,
+  "payment_date": {
+    "$date": "2025-01-30T19:46:45.355Z"
+  },
+  "status": "Chưa thanh toán",
+  "count": 85,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6772f8a5a855f5cfaa6b89e1"
+  },
+  "fee_id": "677276fc2e8e2cb7ebce420a",
+  "payment_id": "E71KDFFB",
+  "household_id": "6761a3291a32b990837bf01e",
+  "amount": 14000,
+  "payment_date": {
+    "$date": "2025-01-30T19:46:45.355Z"
+  },
+  "status": "Chưa thanh toán",
+  "count": 85,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6772f8a5a855f5cfaa6b89e2"
+  },
+  "fee_id": "677276fc2e8e2cb7ebce420a",
+  "payment_id": "XN1RIRXA",
+  "household_id": "6772e666e1359851fdf9a3b6",
+  "amount": 14000,
+  "payment_date": {
+    "$date": "2025-01-30T19:46:45.355Z"
+  },
+  "status": "Chưa thanh toán",
+  "count": 85,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6772f8a5a855f5cfaa6b89e3"
+  },
+  "fee_id": "677276fc2e8e2cb7ebce420a",
+  "payment_id": "4Y2ZUA8Z",
+  "household_id": "6772f5fca855f5cfaa6b84dc",
+  "amount": 14000,
+  "payment_date": {
+    "$date": "2025-01-30T19:46:45.355Z"
+  },
+  "status": "Chưa thanh toán",
+  "count": 75,
+  "__v": 0
+}]
